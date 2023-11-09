@@ -40,7 +40,7 @@ jobs:
       target-sha: ${{ steps.git-metadata.outputs.TARGET_SHA }}
 
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
 
       - name: Get git metadata
         id: git-metadata
@@ -97,7 +97,7 @@ jobs:
             -f context='Workload Checks Suite / submission' \
             -f target_url=${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
 
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
 
       - name: Configure AWS Credentials
         uses: aws-actions/configure-aws-credentials@v4.0.1
