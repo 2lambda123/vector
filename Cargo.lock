@@ -2133,7 +2133,7 @@ dependencies = [
  "indoc",
  "memchr",
  "once_cell",
- "ordered-float 4.1.1",
+ "ordered-float 4.2.0",
  "prost 0.12.1",
  "prost-reflect",
  "regex",
@@ -5997,7 +5997,7 @@ dependencies = [
  "bytes 1.5.0",
  "chrono",
  "hex",
- "ordered-float 4.1.1",
+ "ordered-float 4.2.0",
  "prost 0.12.1",
  "prost-build 0.12.1",
  "tonic 0.10.2",
@@ -6033,9 +6033,9 @@ dependencies = [
 
 [[package]]
 name = "ordered-float"
-version = "4.1.1"
+version = "4.2.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "536900a8093134cf9ccf00a27deb3532421099e958d9dd431135d0c7543ca1e8"
+checksum = "a76df7075c7d4d01fdcb46c912dd17fba5b60c78ea480b475f2b6ab6f666584e"
 dependencies = [
  "num-traits",
 ]
@@ -9982,7 +9982,7 @@ dependencies = [
  "openssl",
  "openssl-probe",
  "openssl-src",
- "ordered-float 4.1.1",
+ "ordered-float 4.2.0",
  "paste",
  "percent-encoding",
  "pin-project",
@@ -10137,7 +10137,7 @@ dependencies = [
  "indexmap 2.1.0",
  "metrics",
  "nom",
- "ordered-float 4.1.1",
+ "ordered-float 4.2.0",
  "paste",
  "pin-project",
  "quickcheck",
@@ -10246,7 +10246,7 @@ dependencies = [
  "noisy_float",
  "once_cell",
  "openssl",
- "ordered-float 4.1.1",
+ "ordered-float 4.2.0",
  "parking_lot",
  "pin-project",
  "proptest",
@@ -10447,7 +10447,7 @@ dependencies = [
  "ofb",
  "once_cell",
  "onig",
- "ordered-float 4.1.1",
+ "ordered-float 4.2.0",
  "paste",
  "peeking_take_while",
  "percent-encoding",
