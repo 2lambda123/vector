@@ -56,7 +56,7 @@ end
 release = Vector::Release.all!(RELEASE_REFERENCE_DIR).last
 
 if release_exists?(release)
-  Util::Printer.error!(
+  raise StandardError(
     <<~EOF
     It looks like release v#{release.version} has already been released. A tag for this release already exists.
 
@@ -98,7 +98,7 @@ else
     EOF
 
   if Util::Printer.get(words, ["y", "n"]) == "n"
-    Util::Printer.error!("Ok, I've aborted. Please re-run this command when you're ready.")
+    raise StandardError("Ok, I've aborted. Please re-run this command when you're ready.")
   end
 
   commands.chomp.split("\n").each do |command|
