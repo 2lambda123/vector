@@ -45,6 +45,14 @@ def bump_version(content, version)
 end
 
 def release_exists?(release)
+  release_reference_dir = "docs/reference/releases"
+  all_tags = `git tag -l`.split("\n")
+  if all_tags.include?("v#{release.version}")
+    return true
+  else
+    return false
+  end
+end
   errors = `git rev-parse tags/v#{release.version} 2>&1 >/dev/null`
   errors == ""
 end
@@ -55,7 +63,14 @@ end
 
 release = Vector::Release.all!(RELEASE_REFERENCE_DIR).last
 
-if release_exists?(release)
+if release_exists?(release) == true
+  Util::Printer.error!(
+    <<~EOF
+    It looks like release v#{release.version} has already been released. A tag for this release already exists.
+
+    This command will only release the latest release. If you're trying to release from an older major or minor version, you must do so from that branch.
+    EOF
+  )
   Util::Printer.error!(
     <<~EOF
     It looks like release v#{release.version} has already been released. A tag for this release already exists.
