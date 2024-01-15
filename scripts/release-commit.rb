@@ -97,7 +97,10 @@ else
     Proceed to execute the above commands?
     EOF
 
-  if Util::Printer.get(words, ["y", "n"]) == "n"
+# Improve the user prompt for executing the commands
+  user_input = Util::Printer.get(words, ["y", "n"])
+  Util::Printer.log("User input: "+ user_input)
+  if user_input == "n"
     Util::Printer.error!("Ok, I've aborted. Please re-run this command when you're ready.")
   end
 
