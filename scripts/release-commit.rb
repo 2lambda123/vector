@@ -27,14 +27,22 @@ RELEASE_REFERENCE_DIR = File.join(ROOT_DIR, "docs", "reference", "releases")
 
 def bump_cargo_version(version)
   # Cargo.toml
-  content = File.read("#{ROOT_DIR}/Cargo.toml")
-  new_content = bump_version(content, version)
-  File.write("#{ROOT_DIR}/Cargo.toml", new_content)
+  begin
+    content = File.read("#{ROOT_DIR}/Cargo.toml")
+    new_content = bump_version(content, version)
+    File.write("#{ROOT_DIR}/Cargo.toml", new_content)
+  rescue => e
+    Util::Printer.error!("Error occurred while bumping the Cargo version: #{e.message}")
+  end
 
   # Cargo.lock
-  content = File.read("#{ROOT_DIR}/Cargo.lock")
-  new_content = bump_version(content, version)
-  File.write("#{ROOT_DIR}/Cargo.lock", new_content)
+  begin
+    content = File.read("#{ROOT_DIR}/Cargo.lock")
+    new_content = bump_version(content, version)
+    File.write("#{ROOT_DIR}/Cargo.lock", new_content)
+  rescue => e
+    Util::Printer.error!("Error occurred while bumping the Cargo version: #{e.message}")
+  end
 end
 
 def bump_version(content, version)
@@ -101,21 +109,24 @@ else
     Util::Printer.error!("Ok, I've aborted. Please re-run this command when you're ready.")
   end
 
-  commands.chomp.split("\n").each do |command|
-    system(command)
+  Util::Printer.title("Executing commands")
+commands.chomp.split("\n").each do |command|
+  Util::Printer.log("Executing command: #{command}")
+  status = system(command)
 
-    if !$?.success?
-      Util::Printer.error!(
-        <<~EOF
-        Command failed!
+  if !$?.success?
+    Util::Printer.error!(
+      <<~EOF
+      The following command failed:
 
-          #{command}
+        #{command}
 
-        Produced the following error:
+      Produced the following error:
 
-          #{$?.inspect}
-        EOF
-      )
-    end
+        #{$?.inspect}
+      EOF
+    )
   end
+  Util::Printer.log("Command output: #{status}")
+end
 end
