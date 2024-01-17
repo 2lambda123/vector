@@ -35,7 +35,7 @@ def bump_file_version(file, version)
   new_content = content.sub(/name = "vector"
 version = "([a-z0-9.-]*)"
 /, "name = \"vector\"\nversion = \"#{version}\"\n")
-  File.write("#{ROOT_DIR}/#{file}", new_content)
+  File.write("\n  #{ROOT_DIR}/#{file}", new_content)
 end
 
 def bump_version(content, version)
