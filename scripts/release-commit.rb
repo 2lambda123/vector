@@ -26,15 +26,20 @@ RELEASE_REFERENCE_DIR = File.join(ROOT_DIR, "docs", "reference", "releases")
 #
 
 def bump_cargo_version(version)
-  # Cargo.toml
-  content = File.read("#{ROOT_DIR}/Cargo.toml")
-  new_content = bump_version(content, version)
-  File.write("#{ROOT_DIR}/Cargo.toml", new_content)
+  # Cargo.toml and Cargo.lock
+  cargo_version = `cargo metadata --no-deps --format-version 1 --offline | jq -r '.packages[] | select(.name == "vector") | .version'`
+  if $?.success?
+    content = File.read("#{ROOT_DIR}/Cargo.toml")
+    new_content = content.gsub(/version = "#{cargo_version}"/, "version = \"#{version}\"")
+    File.write("#{ROOT_DIR}/Cargo.toml", new_content)
 
-  # Cargo.lock
-  content = File.read("#{ROOT_DIR}/Cargo.lock")
-  new_content = bump_version(content, version)
-  File.write("#{ROOT_DIR}/Cargo.lock", new_content)
+    content = File.read("#{ROOT_DIR}/Cargo.lock")
+    new_content = content.gsub(/version = "#{cargo_version}"/, "version = \"#{version}\"")
+    File.write("#{ROOT_DIR}/Cargo.lock", new_content)
+    Util::Printer.success("Updated the version in Cargo.toml & Cargo.lock to #{version}")
+  else
+    Util::Printer.error!("Failed to fetch current version from Cargo metadata")
+  end
 end
 
 def bump_version(content, version)
