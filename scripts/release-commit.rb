@@ -45,8 +45,8 @@ def bump_version(content, version)
 end
 
 def release_exists?(release)
-  errors = `git rev-parse tags/v#{release.version} 2>&1 >/dev/null`
-  errors == ""
+  tag_list = `git tag --list`.split('\n')
+  tag_list.include?("v#{release.version}")
 end
 
 #
