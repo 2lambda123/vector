@@ -26,15 +26,16 @@ RELEASE_REFERENCE_DIR = File.join(ROOT_DIR, "docs", "reference", "releases")
 #
 
 def bump_cargo_version(version)
-  # Cargo.toml
-  content = File.read("#{ROOT_DIR}/Cargo.toml")
-  new_content = bump_version(content, version)
-  File.write("#{ROOT_DIR}/Cargo.toml", new_content)
+  bump_file_version("Cargo.toml", version)
+  bump_file_version("Cargo.lock", version)
+end
 
-  # Cargo.lock
-  content = File.read("#{ROOT_DIR}/Cargo.lock")
-  new_content = bump_version(content, version)
-  File.write("#{ROOT_DIR}/Cargo.lock", new_content)
+def bump_file_version(file, version)
+  content = File.read("#{ROOT_DIR}/")
+  new_content = content.sub(/name = "vector"
+version = "([a-z0-9.-]*)"
+/, "name = \"vector\"\nversion = \"#{version}\"\n")
+  File.write("#{ROOT_DIR}/#{file}", new_content)
 end
 
 def bump_version(content, version)
