@@ -86,7 +86,7 @@ else
     git add #{ROOT_DIR} -A
     git commit -sam 'chore: Prepare v#{release.version} release' || true
     git tag -a v#{release.version} -m "v#{release.version}"
-    git branch v#{branch_name} 2>/dev/null || true
+    git branch v#{branch_name} && Util::Printer.success("Created branch v#{branch_name}") || Util::Printer.error!("Failed to create branch v#{branch_name}")
     EOF
 
   commands.chomp!
