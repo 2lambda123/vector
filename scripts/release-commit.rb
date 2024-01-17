@@ -40,8 +40,8 @@ end
 
 def bump_version(content, version)
   content.sub(
-    /name = "vector"\nversion = "([a-z0-9.-]*)"\n/,
-    "name = \"vector\"\nversion = \"#{version}\"\n"
+    /version = "([a-z0-9.-]*)"/,
+    "version = \"#{version}\""
   )
 end
 
