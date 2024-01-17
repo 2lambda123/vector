@@ -53,7 +53,11 @@ end
 # Execute
 #
 
-release = Vector::Release.all!(RELEASE_REFERENCE_DIR).last
+releases = Vector::Release.all!(RELEASE_REFERENCE_DIR)
+
+Util::Printer.error!("No releases found.") if releases.empty?
+
+release = releases.last
 
 if release_exists?(release)
   Util::Printer.error!(
