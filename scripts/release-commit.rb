@@ -109,6 +109,7 @@ else
     EOF
 
   if Util::Printer.get(words, ["y", "n"]) == "n"
+  Util::Printer.error!("Ok, I've aborted. Please re-run this command when you're ready.")
     Util::Printer.error!("Ok, I've aborted. Please re-run this command when you're ready.")
   end
 
