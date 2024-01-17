@@ -91,7 +91,7 @@ else
 
   commands.chomp!
 
-  status = `git status --short`.chomp!
+  status = `git status`.chomp!
 
   words =
     <<~EOF
@@ -99,9 +99,11 @@ else
 
     #{commands}
 
-    Your current `git status` is:
-
+    Your current git status is:
+    
+    ```
     #{status}
+    ```
 
     Proceed to execute the above commands?
     EOF
