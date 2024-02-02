@@ -375,19 +375,6 @@ dependencies = [
 ]
 
 [[package]]
-name = "async-compat"
-version = "0.2.3"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "f68a707c1feb095d8c07f8a65b9f506b117d30af431cab89374357de7c11461b"
-dependencies = [
- "futures-core",
- "futures-io",
- "once_cell",
- "pin-project-lite",
- "tokio",
-]
-
-[[package]]
 name = "async-compression"
 version = "0.4.6"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -6104,12 +6091,11 @@ checksum = "624a8340c38c1b80fd549087862da4ba43e08858af025b236e509b6649fc13d5"
 
 [[package]]
 name = "opendal"
-version = "0.41.0"
+version = "0.44.2"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "e31b48f0af6de5b3b344c1acc1e06c4581dca3e13cd5ba05269927fc2abf953a"
+checksum = "4af824652d4d2ffabf606d337a071677ae621b05622adf35df9562f69d9b4498"
 dependencies = [
  "anyhow",
- "async-compat",
  "async-trait",
  "backon",
  "base64 0.21.7",
@@ -6117,14 +6103,12 @@ dependencies = [
  "chrono",
  "flagset",
  "futures 0.3.30",
+ "getrandom 0.2.12",
  "http 0.2.9",
- "hyper",
  "log",
  "md-5",
  "once_cell",
- "parking_lot",
  "percent-encoding",
- "pin-project",
  "quick-xml 0.30.0",
  "reqwest",
  "serde",
