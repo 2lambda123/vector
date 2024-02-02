@@ -3923,9 +3923,9 @@ dependencies = [
 
 [[package]]
 name = "h2"
-version = "0.3.21"
+version = "0.3.24"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "91fc23aa11be92976ef4729127f1a74adf36d8436f7816b185d18df956790833"
+checksum = "bb2c4422095b67ee78da96fbb51a4cc413b3b25883c7717ff7ca1ab31022c9c9"
 dependencies = [
  "bytes 1.5.0",
  "fnv",
@@ -3933,7 +3933,26 @@ dependencies = [
  "futures-sink",
  "futures-util",
  "http 0.2.9",
- "indexmap 1.9.3",
+ "indexmap 2.1.0",
+ "slab",
+ "tokio",
+ "tokio-util",
+ "tracing 0.1.40",
+]
+
+[[package]]
+name = "h2"
+version = "0.4.2"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "31d030e59af851932b72ceebadf4a2b5986dba4c3b99dd2493f8273a0f151943"
+dependencies = [
+ "bytes 1.5.0",
+ "fnv",
+ "futures-core",
+ "futures-sink",
+ "futures-util",
+ "http 1.0.0",
+ "indexmap 2.1.0",
  "slab",
  "tokio",
  "tokio-util",
@@ -4362,7 +4381,7 @@ dependencies = [
  "futures-channel",
  "futures-core",
  "futures-util",
- "h2",
+ "h2 0.3.24",
  "http 0.2.9",
  "http-body",
  "httparse",
@@ -7606,7 +7625,7 @@ dependencies = [
  "encoding_rs",
  "futures-core",
  "futures-util",
- "h2",
+ "h2 0.3.24",
  "http 0.2.9",
  "http-body",
  "hyper",
@@ -9411,7 +9430,7 @@ dependencies = [
  "bytes 1.5.0",
  "futures-core",
  "futures-util",
- "h2",
+ "h2 0.3.24",
  "http 0.2.9",
  "http-body",
  "hyper",
@@ -9441,7 +9460,7 @@ dependencies = [
  "base64 0.21.5",
  "bytes 1.5.0",
  "flate2",
- "h2",
+ "h2 0.3.24",
  "http 0.2.9",
  "http-body",
  "hyper",
@@ -10147,7 +10166,7 @@ dependencies = [
  "governor",
  "greptimedb-client",
  "grok",
- "h2",
+ "h2 0.4.2",
  "hash_hasher",
  "hashbrown 0.14.2",
  "headers 0.4.0",
