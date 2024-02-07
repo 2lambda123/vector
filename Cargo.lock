@@ -1922,7 +1922,7 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "6ca592ad99e6a0fd4b95153406138b997cc26ccd3cd0aecdfd4fbdbf1519bd77"
 dependencies = [
  "serde",
- "toml 0.8.9",
+ "toml 0.8.10",
 ]
 
 [[package]]
@@ -2339,7 +2339,7 @@ dependencies = [
  "directories",
  "serde",
  "thiserror",
- "toml 0.8.9",
+ "toml 0.8.10",
 ]
 
 [[package]]
@@ -8228,7 +8228,7 @@ version = "0.3.4"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "fc6244d74ff29bd838ad4cfc9184e3f5d0011500acc8d3fb96708211d4edfb26"
 dependencies = [
- "toml 0.8.9",
+ "toml 0.8.10",
 ]
 
 [[package]]
@@ -9406,14 +9406,14 @@ dependencies = [
 
 [[package]]
 name = "toml"
-version = "0.8.9"
+version = "0.8.10"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "c6a4b9e8023eb94392d3dca65d717c53abc5dad49c07cb65bb8fcd87115fa325"
+checksum = "9a9aad4a3066010876e8dcf5a8a06e70a558751117a145c6ce2b82c2e2054290"
 dependencies = [
  "serde",
  "serde_spanned",
  "toml_datetime",
- "toml_edit 0.21.1",
+ "toml_edit 0.22.4",
 ]
 
 [[package]]
@@ -9449,9 +9449,9 @@ dependencies = [
 
 [[package]]
 name = "toml_edit"
-version = "0.21.1"
+version = "0.22.4"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "6a8534fd7f78b5405e860340ad6575217ce99f38d4d5c8f2442cb5ecb50090e1"
+checksum = "0c9ffdf896f8daaabf9b66ba8e77ea1ed5ed0f72821b398aba62352e95062951"
 dependencies = [
  "indexmap 2.1.0",
  "serde",
@@ -10152,7 +10152,7 @@ dependencies = [
  "serde_yaml 0.9.30",
  "sha2",
  "tempfile",
- "toml 0.8.9",
+ "toml 0.8.10",
 ]
 
 [[package]]
@@ -10323,7 +10323,7 @@ dependencies = [
  "tokio-test",
  "tokio-tungstenite",
  "tokio-util",
- "toml 0.8.9",
+ "toml 0.8.10",
  "tonic 0.10.2",
  "tonic-build 0.10.2",
  "tower",
@@ -10462,7 +10462,7 @@ dependencies = [
  "serde_json",
  "serde_with 3.6.0",
  "snafu",
- "toml 0.8.9",
+ "toml 0.8.10",
  "tracing 0.1.40",
  "url",
  "vector-config-common",
@@ -10563,7 +10563,7 @@ dependencies = [
  "tokio-stream",
  "tokio-test",
  "tokio-util",
- "toml 0.8.9",
+ "toml 0.8.10",
  "tonic 0.10.2",
  "tracing 0.1.40",
  "tracing-core 0.1.32",
