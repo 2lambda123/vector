@@ -46,7 +46,7 @@ def bump_version(content, version)
 end
 
 def release_exists?(release)
-  tag_list = `git tag --list`.split('\n')
+  tag_list = `git tag --list`.split("\n")
   tag_list.include?("v#{release.version}")
 end
 
