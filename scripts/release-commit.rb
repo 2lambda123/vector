@@ -46,7 +46,7 @@ end
 
 def release_exists?(release)
   errors = `git rev-parse tags/v#{release.version} 2>&1 >/dev/null`
-  errors == ""
+  errors.empty?
 end
 
 #
@@ -56,9 +56,9 @@ end
 release = Vector::Release.all!(RELEASE_REFERENCE_DIR).last
 
 if release_exists?(release)
-  raise StandardError(
+  raise StandardError.new(
     <<~EOF
-    It looks like release v#{release.version} has already been released. A tag for this release already exists.
+    It looks like the release version v#{release.version} has already been released. This release version already exists as a tag in the repository.
 
     This command will only release the latest release. If you're trying to release from an older major or minor version, you must do so from that branch.
     EOF
@@ -68,7 +68,7 @@ else
 
   bump_cargo_version(release.version)
 
-  Util::Printer.success("Bumped the version in Cargo.toml & Cargo.lock to #{release.version}")
+  Util::Printer.info("Bumped the version in Cargo.toml & Cargo.lock to #{release.version}")
 
   branch_name = "#{release.version.major}.#{release.version.minor}"
 
