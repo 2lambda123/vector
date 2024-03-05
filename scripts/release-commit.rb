@@ -1,6 +1,15 @@
 #!/usr/bin/env ruby
 
-# release-commit.rb
+# Script to commit and tag the pending release
+# Handles release commit and tag
+# Uses root directory and release reference directory for operations
+# Contains functions for bumping cargo version and checking release existence
+#!/usr/bin/env ruby
+
+# Required libraries
+require "json"
+require_relative "print/util/printer"
+require_relative "print/util/release"
 #
 # SUMMARY
 #
