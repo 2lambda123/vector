@@ -4377,7 +4377,7 @@ dependencies = [
  "httpdate",
  "itoa",
  "pin-project-lite",
- "socket2 0.4.10",
+ "socket2 0.5.6",
  "tokio",
  "tower-service",
  "tracing 0.1.40",
@@ -5528,14 +5528,14 @@ dependencies = [
 
 [[package]]
 name = "metrics-util"
-version = "0.16.0"
+version = "0.16.2"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "2670b8badcc285d486261e2e9f1615b506baff91427b61bd336a472b65bbf5ed"
+checksum = "ece71ab046dcf45604e573329966ec1db5ff4b81cfa170a924ff4c959ab5451a"
 dependencies = [
  "crossbeam-epoch",
  "crossbeam-utils",
- "hashbrown 0.13.1",
- "indexmap 1.9.3",
+ "hashbrown 0.14.2",
+ "indexmap 2.1.0",
  "metrics 0.22.1",
  "num_cpus",
  "ordered-float 4.2.0",
@@ -10546,7 +10546,7 @@ dependencies = [
  "memmap2",
  "metrics 0.22.1",
  "metrics-tracing-context",
- "metrics-util 0.16.0",
+ "metrics-util 0.16.2",
  "num-traits",
  "once_cell",
  "pin-project",
@@ -10685,7 +10685,7 @@ dependencies = [
  "indexmap 2.1.0",
  "metrics 0.22.1",
  "metrics-tracing-context",
- "metrics-util 0.16.0",
+ "metrics-util 0.16.2",
  "mlua",
  "ndarray",
  "ndarray-stats",
