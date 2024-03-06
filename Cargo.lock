@@ -515,9 +515,9 @@ dependencies = [
 
 [[package]]
 name = "async-graphql-warp"
-version = "7.0.1"
+version = "7.0.2"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "d906b817c1499c0a814ea62b2a9cc03726e50d694d7e8cad3fcc1b24e8b62883"
+checksum = "9fbd05ff161d6abed02f8e994763a9356ae939177f4056d464e767c9b14e86fd"
 dependencies = [
  "async-graphql",
  "futures-util",
@@ -4377,7 +4377,7 @@ dependencies = [
  "httpdate",
  "itoa",
  "pin-project-lite",
- "socket2 0.4.10",
+ "socket2 0.5.6",
  "tokio",
  "tower-service",
  "tracing 0.1.40",
