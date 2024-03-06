@@ -154,7 +154,7 @@ tracing-tower = { git = "https://github.com/tokio-rs/tracing", default-features 
 
 # Metrics
 metrics = "0.22.1"
-metrics-tracing-context = { version = "0.14.0", default-features = false }
+metrics-tracing-context = { version = "0.15.0", default-features = false }
 
 # AWS - Official SDK
 # depending on a fork to circumvent https://github.com/awslabs/aws-sdk-rust/issues/749
