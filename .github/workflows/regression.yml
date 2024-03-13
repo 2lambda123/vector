@@ -385,7 +385,7 @@ jobs:
       - build-baseline
     steps:
       - name: 'Download baseline image'
-        uses: actions/download-artifact@v3
+        uses: actions/download-artifact@v4
         with:
           name: baseline-image
 
@@ -423,7 +423,7 @@ jobs:
       - build-comparison
     steps:
       - name: 'Download comparison image'
-        uses: actions/download-artifact@v3
+        uses: actions/download-artifact@v4
         with:
           name: comparison-image
 
@@ -608,7 +608,7 @@ jobs:
           aws s3 cp s3://smp-cli-releases/v${{ needs.compute-metadata.outputs.smp-version }}/x86_64-unknown-linux-gnu/smp ${{ runner.temp }}/bin/smp
 
       - name: Download submission metadata
-        uses: actions/download-artifact@v3
+        uses: actions/download-artifact@v4
         with:
           name: vector-submission-metadata
           path: ${{ runner.temp }}/
@@ -699,7 +699,7 @@ jobs:
           aws s3 cp s3://smp-cli-releases/v${{ needs.compute-metadata.outputs.smp-version }}/x86_64-unknown-linux-gnu/smp ${{ runner.temp }}/bin/smp
 
       - name: Download submission metadata
-        uses: actions/download-artifact@v3
+        uses: actions/download-artifact@v4
         with:
           name: vector-submission-metadata
           path: ${{ runner.temp }}/
