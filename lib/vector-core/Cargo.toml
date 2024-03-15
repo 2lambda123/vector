@@ -82,7 +82,7 @@ quickcheck = "1"
 quickcheck_macros = "1"
 proptest = "1.4"
 similar-asserts = "1.5.0"
-tokio-test = "0.4.3"
+tokio-test = "0.4.4"
 toml = { version = "0.8.11", default-features = false, features = ["parse"] }
 ndarray = "0.15.6"
 ndarray-stats = "0.5.1"
