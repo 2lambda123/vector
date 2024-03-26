@@ -4917,7 +4917,7 @@ dependencies = [
  "k8s-test-framework",
  "rand 0.8.5",
  "regex",
- "reqwest 0.12.1",
+ "reqwest 0.12.2",
  "serde_json",
  "tokio",
  "tracing 0.1.40",
@@ -7674,9 +7674,9 @@ dependencies = [
 
 [[package]]
 name = "reqwest"
-version = "0.12.1"
+version = "0.12.2"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "e333b1eb9fe677f6893a9efcb0d277a2d3edd83f358a236b657c32301dc6e5f6"
+checksum = "2d66674f2b6fb864665eea7a3c1ac4e3dfacd2fda83cf6f935a612e01b0e3338"
 dependencies = [
  "base64 0.21.7",
  "bytes 1.5.0",
@@ -10297,7 +10297,7 @@ dependencies = [
  "owo-colors",
  "paste",
  "regex",
- "reqwest 0.12.1",
+ "reqwest 0.12.2",
  "serde",
  "serde_json",
  "serde_yaml 0.9.30",
@@ -10441,7 +10441,7 @@ dependencies = [
  "rdkafka",
  "redis",
  "regex",
- "reqwest 0.12.1",
+ "reqwest 0.12.2",
  "rmp-serde",
  "rmpv",
  "roaring",
@@ -10509,7 +10509,7 @@ dependencies = [
  "futures 0.3.30",
  "graphql_client",
  "indoc",
- "reqwest 0.12.1",
+ "reqwest 0.12.2",
  "serde",
  "serde_json",
  "tokio",
