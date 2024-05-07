@@ -8,7 +8,7 @@ readme = "README.md"
 publish = false
 
 [dependencies]
-anyhow = "1.0.82"
+anyhow = "1.0.83"
 cached = "0.49.3"
 chrono = { version = "0.4.38", default-features = false, features = ["serde", "clock"] }
 clap = { version = "4.5.4", features = ["derive"] }
