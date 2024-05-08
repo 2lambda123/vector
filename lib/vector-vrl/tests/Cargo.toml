@@ -15,7 +15,7 @@ chrono = "0.4"
 chrono-tz = "0.9"
 clap = { version = "4.5.4", features = ["derive"] }
 glob = "0.3"
-prettydiff = "0.6"
+prettydiff = "0.7"
 regex = "1"
 serde = "1"
 serde_json = "1"
