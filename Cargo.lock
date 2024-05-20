@@ -1926,7 +1926,7 @@ dependencies = [
  "ahash 0.8.11",
  "cached_proc_macro",
  "cached_proc_macro_types",
- "hashbrown 0.14.2",
+ "hashbrown 0.14.5",
  "instant",
  "once_cell",
  "thiserror",
@@ -2841,7 +2841,7 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "978747c1d849a7d2ee5e8adc0159961c48fb7e5db2f06af6723b80123bb53856"
 dependencies = [
  "cfg-if",
- "hashbrown 0.14.2",
+ "hashbrown 0.14.5",
  "lock_api",
  "once_cell",
  "parking_lot_core",
@@ -4020,9 +4020,9 @@ dependencies = [
 
 [[package]]
 name = "hashbrown"
-version = "0.14.2"
+version = "0.14.5"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "f93e7192158dbcda357bdec5fb5788eebf8bbac027f3f33e719d29135ae84156"
+checksum = "e5274423e17b7c9fc20b6e7e208532f9b19825d82dfd615708b70edd83df41f1"
 dependencies = [
  "ahash 0.8.11",
  "allocator-api2",
@@ -4736,7 +4736,7 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "d530e1a18b1cb4c484e6e34556a0d948706958449fca0cab753d649f2bce3d1f"
 dependencies = [
  "equivalent",
- "hashbrown 0.14.2",
+ "hashbrown 0.14.5",
  "serde",
 ]
 
@@ -5173,7 +5173,7 @@ dependencies = [
  "backoff",
  "derivative",
  "futures 0.3.30",
- "hashbrown 0.14.2",
+ "hashbrown 0.14.5",
  "json-patch",
  "k8s-openapi 0.21.0",
  "kube-client",
@@ -5379,7 +5379,7 @@ version = "0.12.3"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "d3262e75e648fce39813cb56ac41f3c3e3f65217ebf3844d818d1f9398cfb0dc"
 dependencies = [
- "hashbrown 0.14.2",
+ "hashbrown 0.14.5",
 ]
 
 [[package]]
@@ -5591,7 +5591,7 @@ dependencies = [
  "aho-corasick",
  "crossbeam-epoch",
  "crossbeam-utils",
- "hashbrown 0.14.2",
+ "hashbrown 0.14.5",
  "indexmap 2.1.0",
  "metrics",
  "num_cpus",
@@ -10530,7 +10530,7 @@ dependencies = [
  "grok",
  "h2 0.4.4",
  "hash_hasher",
- "hashbrown 0.14.2",
+ "hashbrown 0.14.5",
  "headers 0.4.0",
  "heim",
  "hex",
