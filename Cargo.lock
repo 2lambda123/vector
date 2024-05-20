@@ -592,7 +592,7 @@ version = "0.34.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "eea7b126ebfa4db78e9e788b2a792b6329f35b4f2fdd56dbc646dedc2beec7a5"
 dependencies = [
- "base64 0.22.0",
+ "base64 0.22.1",
  "bytes 1.6.0",
  "futures 0.3.30",
  "memchr",
@@ -1542,9 +1542,9 @@ checksum = "9d297deb1925b89f2ccc13d7635fa0714f12c87adce1c75356b39ca9b7178567"
 
 [[package]]
 name = "base64"
-version = "0.22.0"
+version = "0.22.1"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "9475866fec1451be56a3c2400fd081ff546538961565ccb5b7142cbd22bc7a51"
+checksum = "72b3254f16251a8381aa12e40e3c4d2f0199f8c6508fbecb9d91f575e0fbb8c6"
 
 [[package]]
 name = "base64-simd"
@@ -1659,7 +1659,7 @@ version = "0.16.1"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "0aed08d3adb6ebe0eff737115056652670ae290f177759aac19c30456135f94c"
 dependencies = [
- "base64 0.22.0",
+ "base64 0.22.1",
  "bollard-stubs",
  "bytes 1.6.0",
  "chrono",
@@ -7098,7 +7098,7 @@ checksum = "80b776a1b2dc779f5ee0641f8ade0125bc1298dd41a9a0c16d8bd57b42d222b1"
 dependencies = [
  "bytes 1.6.0",
  "heck 0.5.0",
- "itertools 0.11.0",
+ "itertools 0.12.1",
  "log",
  "multimap",
  "once_cell",
@@ -7131,7 +7131,7 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "19de2de2a00075bf566bee3bd4db014b11587e84184d3f7a791bc17f1a8e9e48"
 dependencies = [
  "anyhow",
- "itertools 0.11.0",
+ "itertools 0.12.1",
  "proc-macro2 1.0.81",
  "quote 1.0.36",
  "syn 2.0.64",
@@ -7143,7 +7143,7 @@ version = "0.13.1"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "6f5eec97d5d34bdd17ad2db2219aabf46b054c6c41bd5529767c9ce55be5898f"
 dependencies = [
- "base64 0.22.0",
+ "base64 0.22.1",
  "once_cell",
  "prost 0.12.4",
  "prost-types 0.12.4",
@@ -7708,7 +7708,7 @@ version = "0.12.4"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "566cafdd92868e0939d3fb961bd0dc25fcfaaed179291093b3d43e6b3150ea10"
 dependencies = [
- "base64 0.22.0",
+ "base64 0.22.1",
  "bytes 1.6.0",
  "encoding_rs",
  "futures-channel",
@@ -10416,7 +10416,7 @@ dependencies = [
  "azure_identity",
  "azure_storage",
  "azure_storage_blobs",
- "base64 0.22.0",
+ "base64 0.22.1",
  "bloomy",
  "bollard",
  "bytes 1.6.0",
@@ -10724,7 +10724,7 @@ version = "0.1.0"
 dependencies = [
  "async-graphql",
  "async-trait",
- "base64 0.22.0",
+ "base64 0.22.1",
  "bitmask-enum",
  "bytes 1.6.0",
  "chrono",
