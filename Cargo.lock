@@ -6334,6 +6334,12 @@ checksum = "b15813163c1d831bf4a13c3610c05c0d03b39feb07f7e09fa234dac9b15aaf39"
 
 [[package]]
 name = "owo-colors"
+version = "3.5.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "c1b04fb49957986fdce4d6ee7a65027d55d4b6d2265e5848bbb507b58ccfdb6f"
+
+[[package]]
+name = "owo-colors"
 version = "4.0.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "caff54706df99d2a78a5a4e3455ff45448d81ef1bb63c22cd14052ca0e993a3f"
@@ -6851,6 +6857,17 @@ dependencies = [
  "pad",
  "prettytable-rs",
  "structopt",
+]
+
+[[package]]
+name = "prettydiff"
+version = "0.7.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "abec3fb083c10660b3854367697da94c674e9e82aa7511014dc958beeb7215e9"
+dependencies = [
+ "owo-colors 3.5.0",
+ "pad",
+ "prettytable-rs",
 ]
 
 [[package]]
@@ -10349,7 +10366,7 @@ dependencies = [
  "log",
  "once_cell",
  "os_info",
- "owo-colors",
+ "owo-colors 4.0.0",
  "paste",
  "regex",
  "reqwest 0.12.4",
@@ -10859,7 +10876,7 @@ dependencies = [
  "clap 4.5.4",
  "enrichment",
  "glob",
- "prettydiff",
+ "prettydiff 0.7.0",
  "regex",
  "serde",
  "serde_json",
@@ -10948,7 +10965,7 @@ dependencies = [
  "percent-encoding",
  "pest",
  "pest_derive",
- "prettydiff",
+ "prettydiff 0.6.4",
  "prettytable-rs",
  "quickcheck",
  "quoted_printable",
