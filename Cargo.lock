@@ -2283,7 +2283,7 @@ dependencies = [
  "serde_json",
  "similar-asserts",
  "smallvec",
- "snafu 0.8.2",
+ "snafu 0.8.3",
  "syslog_loose 0.21.0",
  "tokio",
  "tokio-util",
@@ -3046,7 +3046,7 @@ dependencies = [
  "anyhow",
  "serde",
  "serde_json",
- "snafu 0.8.2",
+ "snafu 0.8.3",
  "tracing 0.1.40",
  "tracing-subscriber",
  "vector-config",
@@ -7106,7 +7106,7 @@ dependencies = [
  "prost 0.12.4",
  "prost-build 0.12.4",
  "prost-types 0.12.4",
- "snafu 0.8.2",
+ "snafu 0.8.3",
  "vector-common",
 ]
 
@@ -8877,13 +8877,13 @@ dependencies = [
 
 [[package]]
 name = "snafu"
-version = "0.8.2"
+version = "0.8.3"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "75976f4748ab44f6e5332102be424e7c2dc18daeaf7e725f2040c3ebb133512e"
+checksum = "418b8136fec49956eba89be7da2847ec1909df92a9ae4178b5ff0ff092c8d95e"
 dependencies = [
  "futures-core",
  "pin-project",
- "snafu-derive 0.8.2",
+ "snafu-derive 0.8.3",
 ]
 
 [[package]]
@@ -8900,11 +8900,11 @@ dependencies = [
 
 [[package]]
 name = "snafu-derive"
-version = "0.8.2"
+version = "0.8.3"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "b4b19911debfb8c2fb1107bc6cb2d61868aaf53a988449213959bb1b5b1ed95f"
+checksum = "1a4812a669da00d17d8266a0439eddcacbc88b17f732f927e52eeb9d196f7fb5"
 dependencies = [
- "heck 0.4.1",
+ "heck 0.5.0",
  "proc-macro2 1.0.81",
  "quote 1.0.36",
  "syn 2.0.64",
@@ -10633,7 +10633,7 @@ dependencies = [
  "similar-asserts",
  "smallvec",
  "smpl_jwt",
- "snafu 0.8.2",
+ "snafu 0.8.3",
  "snap",
  "socket2 0.5.7",
  "stream-cancel",
@@ -10724,7 +10724,7 @@ dependencies = [
  "rkyv",
  "serde",
  "serde_yaml 0.9.30",
- "snafu 0.8.2",
+ "snafu 0.8.3",
  "temp-dir",
  "tokio",
  "tokio-test",
@@ -10761,7 +10761,7 @@ dependencies = [
  "serde",
  "serde_json",
  "smallvec",
- "snafu 0.8.2",
+ "snafu 0.8.3",
  "stream-cancel",
  "tokio",
  "tracing 0.1.40",
@@ -10787,7 +10787,7 @@ dependencies = [
  "serde",
  "serde_json",
  "serde_with 3.8.1",
- "snafu 0.8.2",
+ "snafu 0.8.3",
  "toml 0.8.13",
  "tracing 0.1.40",
  "url",
@@ -10882,7 +10882,7 @@ dependencies = [
  "serde_with 3.8.1",
  "similar-asserts",
  "smallvec",
- "snafu 0.8.2",
+ "snafu 0.8.3",
  "socket2 0.5.7",
  "tokio",
  "tokio-openssl",
