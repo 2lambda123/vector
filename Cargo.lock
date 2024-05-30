@@ -5585,26 +5585,11 @@ dependencies = [
  "itoa",
  "lockfree-object-pool",
  "metrics 0.23.0",
- "metrics-util 0.17.0",
+ "metrics-util",
  "once_cell",
  "tracing 0.1.40",
  "tracing-core 0.1.32",
  "tracing-subscriber",
-]
-
-[[package]]
-name = "metrics-util"
-version = "0.16.3"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "8b07a5eb561b8cbc16be2d216faf7757f9baf3bfb94dbb0fae3df8387a5bb47f"
-dependencies = [
- "crossbeam-epoch",
- "crossbeam-utils",
- "hashbrown 0.14.5",
- "indexmap 2.1.0",
- "metrics 0.22.3",
- "num_cpus",
- "ordered-float 4.2.0",
 ]
 
 [[package]]
@@ -10714,7 +10699,7 @@ dependencies = [
  "memmap2",
  "metrics 0.22.3",
  "metrics-tracing-context",
- "metrics-util 0.16.3",
+ "metrics-util",
  "num-traits",
  "once_cell",
  "pin-project",
@@ -10853,7 +10838,7 @@ dependencies = [
  "indexmap 2.1.0",
  "metrics 0.22.3",
  "metrics-tracing-context",
- "metrics-util 0.16.3",
+ "metrics-util",
  "mlua",
  "ndarray",
  "ndarray-stats",
