@@ -227,9 +227,9 @@ dependencies = [
 
 [[package]]
 name = "anyhow"
-version = "1.0.82"
+version = "1.0.86"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "f538837af36e6f6a9be0faa67f9a314f8119e4e4b5867c6ab40ed60360142519"
+checksum = "b3d1d046238990b9cf5bcde22a3fb3584ee5cf65fb2765f454ed428c7a0063da"
 
 [[package]]
 name = "anymap"
@@ -5557,16 +5557,6 @@ dependencies = [
 
 [[package]]
 name = "metrics"
-version = "0.22.3"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "2be3cbd384d4e955b231c895ce10685e3d8260c5ccffae898c96c723b0772835"
-dependencies = [
- "ahash 0.8.11",
- "portable-atomic",
-]
-
-[[package]]
-name = "metrics"
 version = "0.23.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "884adb57038347dfbaf2d5065887b6cf4312330dc8e94bc30a1a839bd79d3261"
@@ -5584,7 +5574,7 @@ dependencies = [
  "indexmap 2.1.0",
  "itoa",
  "lockfree-object-pool",
- "metrics 0.23.0",
+ "metrics",
  "metrics-util",
  "once_cell",
  "tracing 0.1.40",
@@ -5603,7 +5593,7 @@ dependencies = [
  "crossbeam-utils",
  "hashbrown 0.14.5",
  "indexmap 2.1.0",
- "metrics 0.23.0",
+ "metrics",
  "num_cpus",
  "ordered-float 4.2.0",
  "quanta",
@@ -6123,7 +6113,7 @@ version = "0.7.2"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "681030a937600a36906c185595136d26abfebb4aa9c65701cefcaf8578bb982b"
 dependencies = [
- "proc-macro-crate 2.0.0",
+ "proc-macro-crate 3.1.0",
  "proc-macro2 1.0.84",
  "quote 1.0.36",
  "syn 2.0.66",
@@ -7016,15 +7006,6 @@ checksum = "7f4c021e1093a56626774e81216a4ce732a735e5bad4868a03f3ed65ca0c3919"
 dependencies = [
  "once_cell",
  "toml_edit 0.19.15",
-]
-
-[[package]]
-name = "proc-macro-crate"
-version = "2.0.0"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "7e8366a6159044a37876a2b9817124296703c586a5c92e2c53751fa06d8d43e8"
-dependencies = [
- "toml_edit 0.20.7",
 ]
 
 [[package]]
@@ -9702,17 +9683,6 @@ dependencies = [
 
 [[package]]
 name = "toml_edit"
-version = "0.20.7"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "70f427fce4d84c72b5b732388bf4a9f4531b53f74e2887e3ecb2481f68f66d81"
-dependencies = [
- "indexmap 2.1.0",
- "toml_datetime",
- "winnow 0.5.18",
-]
-
-[[package]]
-name = "toml_edit"
 version = "0.21.1"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "6a8534fd7f78b5405e860340ad6575217ce99f38d4d5c8f2442cb5ecb50090e1"
@@ -10598,7 +10568,7 @@ dependencies = [
  "lru",
  "maxminddb",
  "md-5",
- "metrics 0.23.0",
+ "metrics",
  "metrics-tracing-context",
  "mlua",
  "mongodb",
@@ -10728,7 +10698,7 @@ dependencies = [
  "futures 0.3.30",
  "hdrhistogram",
  "memmap2",
- "metrics 0.23.0",
+ "metrics",
  "metrics-tracing-context",
  "metrics-util",
  "num-traits",
@@ -10766,7 +10736,7 @@ dependencies = [
  "derivative",
  "futures 0.3.30",
  "indexmap 2.1.0",
- "metrics 0.23.0",
+ "metrics",
  "nom",
  "ordered-float 4.2.0",
  "paste",
@@ -10867,7 +10837,7 @@ dependencies = [
  "http 1.1.0",
  "hyper-proxy",
  "indexmap 2.1.0",
- "metrics 0.23.0",
+ "metrics",
  "metrics-tracing-context",
  "metrics-util",
  "mlua",
