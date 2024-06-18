@@ -3804,14 +3804,14 @@ dependencies = [
 
 [[package]]
 name = "goauth"
-version = "0.14.0"
+version = "0.16.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "d351469a584f3b3565e2e740d4da60839bddc4320dadd7d61da8bdd77ffb373b"
+checksum = "7b1f1228623a5a37d4834f984573a01086708b109bbf0f7c2ee8d70b0c90d7a5"
 dependencies = [
  "arc-swap",
  "futures 0.3.30",
  "log",
- "reqwest 0.11.27",
+ "reqwest 0.12.4",
  "serde",
  "serde_derive",
  "serde_json",
