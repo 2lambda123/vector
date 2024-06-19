@@ -2848,6 +2848,20 @@ dependencies = [
 ]
 
 [[package]]
+name = "dashmap"
+version = "6.0.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "23fadfd577acfd4485fb258011b0fd080882ea83359b6fd41304900b94ccf487"
+dependencies = [
+ "cfg-if",
+ "crossbeam-utils",
+ "hashbrown 0.14.5",
+ "lock_api",
+ "once_cell",
+ "parking_lot_core",
+]
+
+[[package]]
 name = "data-encoding"
 version = "2.6.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -3470,7 +3484,7 @@ dependencies = [
  "chrono",
  "crc",
  "criterion",
- "dashmap",
+ "dashmap 6.0.0",
  "flate2",
  "futures 0.3.30",
  "glob",
@@ -3811,7 +3825,7 @@ dependencies = [
  "arc-swap",
  "futures 0.3.30",
  "log",
- "reqwest 0.12.4",
+ "reqwest 0.12.5",
  "serde",
  "serde_derive",
  "serde_json",
@@ -3828,7 +3842,7 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "821239e5672ff23e2a7060901fa622950bbd80b649cdaadd78d1c1767ed14eb4"
 dependencies = [
  "cfg-if",
- "dashmap",
+ "dashmap 5.5.3",
  "futures 0.3.30",
  "futures-timer",
  "no-std-compat",
@@ -3913,7 +3927,7 @@ name = "greptimedb-client"
 version = "0.1.0"
 source = "git+https://github.com/GreptimeTeam/greptimedb-client-rust.git?rev=bc32362adf0df17a41a95bae4221d6d8f1775656#bc32362adf0df17a41a95bae4221d6d8f1775656"
 dependencies = [
- "dashmap",
+ "dashmap 5.5.3",
  "enum_dispatch",
  "futures 0.3.30",
  "futures-util",
@@ -10015,7 +10029,7 @@ name = "tracing-limit"
 version = "0.1.0"
 dependencies = [
  "criterion",
- "dashmap",
+ "dashmap 6.0.0",
  "mock_instant",
  "tracing 0.1.40",
  "tracing-core 0.1.32",
