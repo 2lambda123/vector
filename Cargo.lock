@@ -2183,9 +2183,9 @@ dependencies = [
 
 [[package]]
 name = "clap"
-version = "4.5.7"
+version = "4.5.8"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "5db83dced34638ad474f39f250d7fea9598bdd239eaced1bdf45d597da0f433f"
+checksum = "84b3edb18336f4df585bc9aa31dd99c036dfa5dc5e9a2939a722a188f3a8970d"
 dependencies = [
  "clap_builder",
  "clap_derive",
@@ -2197,15 +2197,15 @@ version = "2.2.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "bb9b20c0dd58e4c2e991c8d203bbeb76c11304d1011659686b5b644bc29aa478"
 dependencies = [
- "clap 4.5.7",
+ "clap 4.5.8",
  "log",
 ]
 
 [[package]]
 name = "clap_builder"
-version = "4.5.7"
+version = "4.5.8"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "f7e204572485eb3fbf28f871612191521df159bc3e15a9f5064c66dba3a8c05f"
+checksum = "c1c09dd5ada6c6c78075d6fd0da3f90d8080651e2d6cc8eb2f1aaa4034ced708"
 dependencies = [
  "anstream",
  "anstyle",
@@ -2216,18 +2216,18 @@ dependencies = [
 
 [[package]]
 name = "clap_complete"
-version = "4.5.6"
+version = "4.5.7"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "fbca90c87c2a04da41e95d1856e8bcd22f159bdbfa147314d2ce5218057b0e58"
+checksum = "1d598e88f6874d4b888ed40c71efbcbf4076f1dfbae128a08a8c9e45f710605d"
 dependencies = [
- "clap 4.5.7",
+ "clap 4.5.8",
 ]
 
 [[package]]
 name = "clap_derive"
-version = "4.5.5"
+version = "4.5.8"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "c780290ccf4fb26629baa7a1081e68ced113f1d3ec302fa5948f1c381ebf06c6"
+checksum = "2bac35c6dafb060fd4d275d9a4ffae97917c13a6327903a8be2153cd964f7085"
 dependencies = [
  "heck 0.5.0",
  "proc-macro2 1.0.86",
@@ -2552,7 +2552,7 @@ dependencies = [
  "anes",
  "cast",
  "ciborium",
- "clap 4.5.7",
+ "clap 4.5.8",
  "criterion-plot",
  "futures 0.3.30",
  "is-terminal",
@@ -10475,7 +10475,7 @@ dependencies = [
  "anyhow",
  "cached",
  "chrono",
- "clap 4.5.7",
+ "clap 4.5.8",
  "clap-verbosity-flag",
  "clap_complete",
  "confy",
@@ -10551,7 +10551,7 @@ dependencies = [
  "bytesize",
  "chrono",
  "cidr-utils",
- "clap 4.5.7",
+ "clap 4.5.8",
  "colored",
  "console-subscriber",
  "criterion",
@@ -10700,7 +10700,7 @@ dependencies = [
  "anyhow",
  "async-trait",
  "chrono",
- "clap 4.5.7",
+ "clap 4.5.8",
  "futures 0.3.30",
  "graphql_client",
  "indoc",
@@ -10723,7 +10723,7 @@ dependencies = [
  "async-trait",
  "bytecheck 0.7.0",
  "bytes 1.6.0",
- "clap 4.5.7",
+ "clap 4.5.8",
  "crc32fast",
  "criterion",
  "crossbeam-queue",
@@ -10977,7 +10977,7 @@ dependencies = [
 name = "vector-vrl-cli"
 version = "0.1.0"
 dependencies = [
- "clap 4.5.7",
+ "clap 4.5.8",
  "vector-vrl-functions",
  "vrl",
 ]
@@ -10996,7 +10996,7 @@ dependencies = [
  "ansi_term",
  "chrono",
  "chrono-tz 0.9.0",
- "clap 4.5.7",
+ "clap 4.5.8",
  "enrichment",
  "glob",
  "prettydiff 0.7.0",
@@ -11056,7 +11056,7 @@ dependencies = [
  "chrono",
  "chrono-tz 0.8.6",
  "cidr-utils",
- "clap 4.5.7",
+ "clap 4.5.8",
  "codespan-reporting",
  "community-id",
  "crypto_secretbox",
