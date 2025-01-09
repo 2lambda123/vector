@@ -66,7 +66,7 @@ jobs:
         run: exit 1
 
       - name: (PR comment) Get PR branch
-        uses: xt0rted/pull-request-comment-branch@v2
+        uses: xt0rted/pull-request-comment-branch@v3
         id: comment-branch
 
       - name: (PR comment) Set latest commit status as pending
@@ -394,7 +394,7 @@ jobs:
           GITHUB_TOKEN: ${{ steps.generate_token.outputs.token }}
 
       - name: (PR comment) Get PR branch
-        uses: xt0rted/pull-request-comment-branch@v2
+        uses: xt0rted/pull-request-comment-branch@v3
         id: comment-branch
 
       - name: (PR comment) Submit PR result as ${{ needs.integration-tests.result }}
