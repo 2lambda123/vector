@@ -22,7 +22,7 @@ jobs:
 
       - name: (PR comment) Get PR branch
         if: ${{ github.event_name == 'issue_comment' }}
-        uses: xt0rted/pull-request-comment-branch@v2
+        uses: xt0rted/pull-request-comment-branch@v3
         id: comment-branch
 
       - name: (PR comment) Set latest commit status as pending
@@ -83,7 +83,7 @@ jobs:
     if: needs.cross-linux.result == 'success' && github.event_name == 'issue_comment'
     steps:
       - name: (PR comment) Get PR branch
-        uses: xt0rted/pull-request-comment-branch@v2
+        uses: xt0rted/pull-request-comment-branch@v3
         id: comment-branch
 
       - name: (PR comment) Submit PR result as success
