@@ -81,7 +81,7 @@ env-test-util = "1.0.1"
 quickcheck = "1"
 quickcheck_macros = "1"
 proptest = "1.5"
-similar-asserts = "1.5.0"
+similar-asserts = "1.6.1"
 tokio-test = "0.4.4"
 toml = { version = "0.8.14", default-features = false, features = ["parse"] }
 ndarray = "0.15.6"
