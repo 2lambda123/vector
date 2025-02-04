@@ -20,7 +20,7 @@ memmap2 = { version = "0.9.4", default-features = false }
 metrics = "0.23.0"
 num-traits = { version = "0.2.19", default-features = false }
 pin-project.workspace = true
-rkyv = { version = "0.7.44", default-features = false, features = ["size_32", "std", "strict", "validation"] }
+rkyv = { version = "0.7.45", default-features = false, features = ["size_32", "std", "strict", "validation"] }
 serde = { version = "1.0.204", default-features = false, features = ["derive"] }
 snafu = { version = "0.8.4", default-features = false, features = ["std"] }
 tokio-util = { version = "0.7.0", default-features = false }
