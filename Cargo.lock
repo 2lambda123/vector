@@ -3976,9 +3976,9 @@ dependencies = [
 
 [[package]]
 name = "h2"
-version = "0.4.5"
+version = "0.4.7"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "fa82e28a107a8cc405f0839610bdc9b15f1e25ec7d696aa5cf173edbcb1486ab"
+checksum = "ccae279728d634d083c00f6099cb58f01cc99c145b84b8be2f6c74618d79922e"
 dependencies = [
  "atomic-waker",
  "bytes 1.6.1",
@@ -4461,7 +4461,7 @@ dependencies = [
  "httpdate",
  "itoa",
  "pin-project-lite",
- "socket2 0.4.10",
+ "socket2 0.5.8",
  "tokio",
  "tower-service",
  "tracing 0.1.40",
@@ -4477,7 +4477,7 @@ dependencies = [
  "bytes 1.6.1",
  "futures-channel",
  "futures-util",
- "h2 0.4.5",
+ "h2 0.4.7",
  "http 1.2.0",
  "http-body 1.0.0",
  "httparse",
@@ -7869,7 +7869,7 @@ dependencies = [
  "futures-channel",
  "futures-core",
  "futures-util",
- "h2 0.4.5",
+ "h2 0.4.7",
  "http 1.2.0",
  "http-body 1.0.0",
  "http-body-util",
@@ -10608,7 +10608,7 @@ dependencies = [
  "governor",
  "greptimedb-client",
  "grok",
- "h2 0.4.5",
+ "h2 0.4.7",
  "hash_hasher",
  "hashbrown 0.14.5",
  "headers 0.4.0",
