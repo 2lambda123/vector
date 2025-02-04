@@ -470,7 +470,7 @@ dependencies = [
  "chrono",
  "fnv",
  "futures-util",
- "http 1.1.0",
+ "http 1.2.0",
  "indexmap 2.1.0",
  "mime",
  "multer",
@@ -1340,7 +1340,7 @@ dependencies = [
  "axum-core 0.4.3",
  "bytes 1.6.1",
  "futures-util",
- "http 1.1.0",
+ "http 1.2.0",
  "http-body 1.0.0",
  "http-body-util",
  "hyper-util",
@@ -1385,7 +1385,7 @@ dependencies = [
  "async-trait",
  "bytes 1.6.1",
  "futures-util",
- "http 1.1.0",
+ "http 1.2.0",
  "http-body 1.0.0",
  "http-body-util",
  "mime",
@@ -1700,7 +1700,7 @@ dependencies = [
  "futures-util",
  "hex",
  "home",
- "http 1.1.0",
+ "http 1.2.0",
  "http-body-util",
  "hyper 1.2.0",
  "hyper-named-pipe",
@@ -3985,7 +3985,7 @@ dependencies = [
  "fnv",
  "futures-core",
  "futures-sink",
- "http 1.1.0",
+ "http 1.2.0",
  "indexmap 2.1.0",
  "slab",
  "tokio",
@@ -4071,7 +4071,7 @@ dependencies = [
  "base64 0.21.7",
  "bytes 1.6.1",
  "headers-core 0.3.0",
- "http 1.1.0",
+ "http 1.2.0",
  "httpdate",
  "mime",
  "sha1",
@@ -4092,7 +4092,7 @@ version = "0.3.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "54b4a22553d4242c49fddb9ba998a99962b5cc6f22cb5a3482bec22522403ce4"
 dependencies = [
- "http 1.1.0",
+ "http 1.2.0",
 ]
 
 [[package]]
@@ -4347,9 +4347,9 @@ dependencies = [
 
 [[package]]
 name = "http"
-version = "1.1.0"
+version = "1.2.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "21b9ddb458710bc376481b842f5da65cdf31522de232c1ca8146abce2a358258"
+checksum = "f16ca2af56261c99fba8bac40a10251ce8188205a4c448fbb745a2e4daa76fea"
 dependencies = [
  "bytes 1.6.1",
  "fnv",
@@ -4374,7 +4374,7 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "1cac85db508abc24a2e48553ba12a996e87244a0395ce011e62b37158745d643"
 dependencies = [
  "bytes 1.6.1",
- "http 1.1.0",
+ "http 1.2.0",
 ]
 
 [[package]]
@@ -4385,7 +4385,7 @@ checksum = "41cb79eb393015dadd30fc252023adb0b2400a0caee0fa2a077e6e21a551e840"
 dependencies = [
  "bytes 1.6.1",
  "futures-util",
- "http 1.1.0",
+ "http 1.2.0",
  "http-body 1.0.0",
  "pin-project-lite",
 ]
@@ -4402,7 +4402,7 @@ version = "2.1.1"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "0f056c8559e3757392c8d091e796416e4649d8e49e88b8d76df6c002f05027fd"
 dependencies = [
- "http 1.1.0",
+ "http 1.2.0",
  "serde",
 ]
 
@@ -4478,7 +4478,7 @@ dependencies = [
  "futures-channel",
  "futures-util",
  "h2 0.4.5",
- "http 1.1.0",
+ "http 1.2.0",
  "http-body 1.0.0",
  "httparse",
  "httpdate",
@@ -4575,7 +4575,7 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "a0bea761b46ae2b24eb4aef630d8d1c398157b6fc29e6350ecf090a0b70c952c"
 dependencies = [
  "futures-util",
- "http 1.1.0",
+ "http 1.2.0",
  "hyper 1.2.0",
  "hyper-util",
  "log",
@@ -4594,7 +4594,7 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "5ee4be2c948921a1a5320b629c4193916ed787a7f7f293fd3f7f5a6c9de74155"
 dependencies = [
  "futures-util",
- "http 1.1.0",
+ "http 1.2.0",
  "hyper 1.2.0",
  "hyper-util",
  "rustls 0.23.5",
@@ -4654,7 +4654,7 @@ dependencies = [
  "bytes 1.6.1",
  "futures-channel",
  "futures-util",
- "http 1.1.0",
+ "http 1.2.0",
  "http-body 1.0.0",
  "hyper 1.2.0",
  "pin-project-lite",
@@ -5770,7 +5770,7 @@ dependencies = [
  "bytes 1.6.1",
  "encoding_rs",
  "futures-util",
- "http 1.1.0",
+ "http 1.2.0",
  "httparse",
  "log",
  "memchr",
@@ -7848,7 +7848,7 @@ dependencies = [
  "futures-core",
  "futures-util",
  "h2 0.4.5",
- "http 1.1.0",
+ "http 1.2.0",
  "http-body 1.0.0",
  "http-body-util",
  "hyper 1.2.0",
@@ -9923,7 +9923,7 @@ dependencies = [
  "bitflags 2.4.1",
  "bytes 1.6.1",
  "futures-core",
- "http 1.1.0",
+ "http 1.2.0",
  "http-body 1.0.0",
  "http-body-util",
  "pin-project-lite",
@@ -10206,7 +10206,7 @@ dependencies = [
  "byteorder",
  "bytes 1.6.1",
  "data-encoding",
- "http 1.1.0",
+ "http 1.2.0",
  "httparse",
  "log",
  "rand 0.8.5",
@@ -10598,7 +10598,7 @@ dependencies = [
  "hex",
  "hickory-proto",
  "hostname 0.4.0",
- "http 1.1.0",
+ "http 1.2.0",
  "http-body 0.4.5",
  "http-serde",
  "hyper 0.14.28",
@@ -10816,7 +10816,7 @@ dependencies = [
  "chrono",
  "chrono-tz 0.9.0",
  "encoding_rs",
- "http 1.1.0",
+ "http 1.2.0",
  "indexmap 2.1.0",
  "inventory",
  "no-proxy",
@@ -10885,7 +10885,7 @@ dependencies = [
  "futures 0.3.30",
  "futures-util",
  "headers 0.4.0",
- "http 1.1.0",
+ "http 1.2.0",
  "hyper-proxy",
  "indexmap 2.1.0",
  "metrics",
@@ -11722,7 +11722,7 @@ dependencies = [
  "base64 0.21.7",
  "deadpool",
  "futures 0.3.30",
- "http 1.1.0",
+ "http 1.2.0",
  "http-body-util",
  "hyper 1.2.0",
  "hyper-util",
