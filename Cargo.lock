@@ -6611,7 +6611,7 @@ dependencies = [
  "prost 0.13.0",
  "prost-build 0.13.0",
  "tonic 0.11.0",
- "tonic-build 0.12.0",
+ "tonic-build 0.12.3",
  "vector-core",
  "vector-lookup",
  "vrl",
@@ -7424,7 +7424,7 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "04952a6dc0bf60a696e83fc8c58e912d4f6c1d06c6637db44c1cce9c6735c920"
 dependencies = [
  "bytes 1.6.1",
- "heck 0.4.1",
+ "heck 0.5.0",
  "itertools 0.13.0",
  "log",
  "multimap",
@@ -7458,7 +7458,7 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "81bddcdb20abf9501610992b6759a4c888aef7d1a7247ef75e2404275ac24af1"
 dependencies = [
  "anyhow",
- "itertools 0.11.0",
+ "itertools 0.12.1",
  "proc-macro2 1.0.86",
  "quote 1.0.36",
  "syn 2.0.87",
@@ -9174,7 +9174,7 @@ version = "0.8.4"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "38d1e02fca405f6280643174a50c942219f0bbf4dbf7d480f1dd864d6f211ae5"
 dependencies = [
- "heck 0.4.1",
+ "heck 0.5.0",
  "proc-macro2 1.0.86",
  "quote 1.0.36",
  "syn 2.0.87",
@@ -10114,13 +10114,14 @@ dependencies = [
 
 [[package]]
 name = "tonic-build"
-version = "0.12.0"
+version = "0.12.3"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "690943cc223adcdd67bb597a2e573ead1b88e999ba37528fe8e6356bf44b29b6"
+checksum = "9557ce109ea773b399c9b9e5dca39294110b74f1f342cb347a80d1fce8c26a11"
 dependencies = [
  "prettyplease 0.2.15",
  "proc-macro2 1.0.86",
  "prost-build 0.13.0",
+ "prost-types 0.13.0",
  "quote 1.0.36",
  "syn 2.0.87",
 ]
@@ -10955,7 +10956,7 @@ dependencies = [
  "tokio-util",
  "toml 0.8.14",
  "tonic 0.11.0",
- "tonic-build 0.12.0",
+ "tonic-build 0.12.3",
  "tower",
  "tower-http 0.5.2",
  "tower-test",
