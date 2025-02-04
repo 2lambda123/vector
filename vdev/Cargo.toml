@@ -11,9 +11,9 @@ publish = false
 anyhow = "1.0.86"
 cached = "0.52.0"
 chrono = { version = "0.4.38", default-features = false, features = ["serde", "clock"] }
-clap = { version = "4.5.9", features = ["derive"] }
-clap-verbosity-flag = "2.2.0"
-clap_complete = "4.5.8"
+clap = { version = "4.5.13", features = ["derive"] }
+clap-verbosity-flag = "3.0.2"
+clap_complete = "4.5.13"
 confy = "0.6.1"
 directories = "5.0.1"
 # remove this when stabilized https://doc.rust-lang.org/stable/std/path/fn.absolute.html
