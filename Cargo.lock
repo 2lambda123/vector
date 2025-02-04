@@ -2143,6 +2143,12 @@ dependencies = [
 ]
 
 [[package]]
+name = "cidr"
+version = "0.2.3"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "6bdf600c45bd958cf2945c445264471cca8b6c8e67bc87b71affd6d7e5682621"
+
+[[package]]
 name = "cidr-utils"
 version = "0.5.11"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -2153,6 +2159,17 @@ dependencies = [
  "num-traits",
  "once_cell",
  "regex",
+]
+
+[[package]]
+name = "cidr-utils"
+version = "0.6.1"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "25c0a9fb70c2c2cc2a520aa259b1d1345650046a07df1b6da1d3cefcd327f43e"
+dependencies = [
+ "cidr",
+ "num-bigint",
+ "num-traits",
 ]
 
 [[package]]
@@ -4461,7 +4478,7 @@ dependencies = [
  "httpdate",
  "itoa",
  "pin-project-lite",
- "socket2 0.4.10",
+ "socket2 0.5.8",
  "tokio",
  "tower-service",
  "tracing 0.1.40",
@@ -5906,11 +5923,11 @@ dependencies = [
 
 [[package]]
 name = "no-proxy"
-version = "0.3.4"
+version = "0.3.5"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "1b41e7479dc3678ea792431e04bafd62a31879035f4a5fa707602df062f58c77"
+checksum = "6d688d11967f7f52e273fb8f8f07ecb094254fed630e22a0cab60cc98047a5db"
 dependencies = [
- "cidr-utils",
+ "cidr-utils 0.6.1",
  "serde",
 ]
 
@@ -10585,7 +10602,7 @@ dependencies = [
  "bytes 1.6.1",
  "bytesize",
  "chrono",
- "cidr-utils",
+ "cidr-utils 0.5.11",
  "clap 4.5.9",
  "colored",
  "console-subscriber",
@@ -11090,7 +11107,7 @@ dependencies = [
  "charset",
  "chrono",
  "chrono-tz 0.8.6",
- "cidr-utils",
+ "cidr-utils 0.5.11",
  "clap 4.5.9",
  "codespan-reporting",
  "community-id",
