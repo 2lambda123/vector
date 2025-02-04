@@ -1433,9 +1433,9 @@ dependencies = [
 
 [[package]]
 name = "azure_core"
-version = "0.20.0"
+version = "0.21.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "34ce3de4b65b1ee2667c81d1fc692949049502a4cf9c38118d811d6d79a7eaef"
+checksum = "7b552ad43a45a746461ec3d3a51dfb6466b4759209414b439c165eb6a6b7729e"
 dependencies = [
  "async-trait",
  "base64 0.22.1",
@@ -1460,14 +1460,14 @@ dependencies = [
 
 [[package]]
 name = "azure_identity"
-version = "0.20.0"
+version = "0.21.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "72c97790480791ec1ee9b76f5c6499b1d0aac0d4cd1e62010bfc19bb545544c5"
+checksum = "88ddd80344317c40c04b603807b63a5cefa532f1b43522e72f480a988141f744"
 dependencies = [
  "async-lock 3.0.0",
  "async-process 2.2.2",
  "async-trait",
- "azure_core 0.20.0",
+ "azure_core 0.21.0",
  "futures 0.3.31",
  "oauth2",
  "pin-project",
@@ -4887,16 +4887,6 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "418a0a6fab821475f634efe3ccc45c013f742efe03d853e8d3355d5cb850ecf8"
 dependencies = [
  "matches",
- "unicode-bidi",
- "unicode-normalization",
-]
-
-[[package]]
-name = "idna"
-version = "0.5.0"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "634d9b1461af396cad843f47fdba5597a4f9e6ddd4bfb6ff5d85028c25cb12f6"
-dependencies = [
  "unicode-bidi",
  "unicode-normalization",
 ]
@@ -10825,7 +10815,7 @@ dependencies = [
  "aws-smithy-types",
  "aws-types",
  "axum 0.7.5",
- "azure_core 0.20.0",
+ "azure_core 0.21.0",
  "azure_identity",
  "azure_storage",
  "azure_storage_blobs",
