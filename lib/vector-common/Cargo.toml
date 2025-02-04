@@ -50,7 +50,7 @@ derivative = { version = "2.2.0", default-features = false }
 futures = { version = "0.3.31", default-features = false, features = ["std"] }
 indexmap = { version = "2.1.0", default-features = false, features = ["std"] }
 metrics = "0.23.0"
-nom = { version = "7", optional = true }
+nom = { version = "8", optional = true }
 ordered-float = { version = "4.2.1", default-features = false }
 paste = "1.0.15"
 pin-project.workspace = true
