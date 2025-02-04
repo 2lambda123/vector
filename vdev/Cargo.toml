@@ -18,7 +18,7 @@ confy = "0.6.1"
 directories = "5.0.1"
 # remove this when stabilized https://doc.rust-lang.org/stable/std/path/fn.absolute.html
 dunce = "1.0.4"
-glob = { version = "0.3.1", default-features = false }
+glob = { version = "0.3.2", default-features = false }
 hex = "0.4.3"
 indexmap = { version = "2.0", default-features = false, features = ["serde", "std"] }
 indicatif = { version = "0.17.11", features = ["improved_unicode"] }
