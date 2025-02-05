@@ -6681,12 +6681,6 @@ checksum = "b15813163c1d831bf4a13c3610c05c0d03b39feb07f7e09fa234dac9b15aaf39"
 
 [[package]]
 name = "owo-colors"
-version = "3.5.0"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "c1b04fb49957986fdce4d6ee7a65027d55d4b6d2265e5848bbb507b58ccfdb6f"
-
-[[package]]
-name = "owo-colors"
 version = "4.1.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "fb37767f6569cd834a413442455e0f066d0d522de8630436e2a1761d9726ba56"
@@ -7202,11 +7196,11 @@ dependencies = [
 
 [[package]]
 name = "prettydiff"
-version = "0.7.0"
+version = "0.8.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "abec3fb083c10660b3854367697da94c674e9e82aa7511014dc958beeb7215e9"
+checksum = "bf0668e945d7caa9b3e3a4cb360d7dd1f2613d62233f8846dbfb7ea3c3df0910"
 dependencies = [
- "owo-colors 3.5.0",
+ "owo-colors",
  "pad",
  "prettytable-rs",
 ]
@@ -7430,7 +7424,7 @@ checksum = "04952a6dc0bf60a696e83fc8c58e912d4f6c1d06c6637db44c1cce9c6735c920"
 dependencies = [
  "bytes 1.10.0",
  "heck 0.5.0",
- "itertools 0.12.1",
+ "itertools 0.13.0",
  "log",
  "multimap",
  "once_cell",
@@ -7476,7 +7470,7 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "c5834058badd2cf6cfcd9c92998ceb2bab614f012cccf3728de3edf2c57b9132"
 dependencies = [
  "anyhow",
- "itertools 0.12.1",
+ "itertools 0.13.0",
  "proc-macro2 1.0.93",
  "quote 1.0.36",
  "syn 2.0.87",
@@ -10810,7 +10804,7 @@ dependencies = [
  "log",
  "once_cell",
  "os_info",
- "owo-colors 4.1.0",
+ "owo-colors",
  "paste",
  "regex",
  "reqwest 0.12.5",
@@ -11320,7 +11314,7 @@ dependencies = [
  "clap 4.5.13",
  "enrichment",
  "glob",
- "prettydiff 0.7.0",
+ "prettydiff 0.8.0",
  "regex",
  "serde",
  "serde_json",
