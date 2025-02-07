@@ -1979,7 +1979,7 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "5fbd1fe9db3ebf71b89060adaf7b0504c2d6a425cf061313099547e382c2e472"
 dependencies = [
  "serde",
- "toml 0.8.14",
+ "toml 0.8.15",
 ]
 
 [[package]]
@@ -2432,7 +2432,7 @@ dependencies = [
  "directories 5.0.1",
  "serde",
  "thiserror 1.0.62",
- "toml 0.8.14",
+ "toml 0.8.15",
 ]
 
 [[package]]
@@ -8818,7 +8818,7 @@ version = "0.3.8"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "93b4e415d6bff989e5e48649ca9b8b4d4997cb069a0c90a84bfd38c7df5e3968"
 dependencies = [
- "toml 0.8.14",
+ "toml 0.8.15",
 ]
 
 [[package]]
@@ -10142,14 +10142,14 @@ dependencies = [
 
 [[package]]
 name = "toml"
-version = "0.8.14"
+version = "0.8.15"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "6f49eb2ab21d2f26bd6db7bf383edc527a7ebaee412d17af4d40fdccd442f335"
+checksum = "ac2caab0bf757388c6c0ae23b3293fdb463fee59434529014f85e3263b995c28"
 dependencies = [
  "serde",
  "serde_spanned",
  "toml_datetime",
- "toml_edit 0.22.14",
+ "toml_edit 0.22.16",
 ]
 
 [[package]]
@@ -10185,9 +10185,9 @@ dependencies = [
 
 [[package]]
 name = "toml_edit"
-version = "0.22.14"
+version = "0.22.16"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "f21c7aaf97f1bd9ca9d4f9e73b0a6c74bd5afef56f2bc931943a6e1c37e04e38"
+checksum = "278f3d518e152219c994ce877758516bca5e118eaed6996192a774fb9fbf0788"
 dependencies = [
  "indexmap 2.1.0",
  "serde",
@@ -10963,7 +10963,7 @@ dependencies = [
  "serde_yaml 0.9.30",
  "sha2",
  "tempfile",
- "toml 0.8.14",
+ "toml 0.8.15",
 ]
 
 [[package]]
@@ -11134,7 +11134,7 @@ dependencies = [
  "tokio-test",
  "tokio-tungstenite 0.20.1",
  "tokio-util",
- "toml 0.8.14",
+ "toml 0.8.15",
  "tonic 0.11.0",
  "tonic-build 0.12.3",
  "tower 0.5.0",
@@ -11273,7 +11273,7 @@ dependencies = [
  "serde_json",
  "serde_with 3.12.0",
  "snafu 0.8.5",
- "toml 0.8.14",
+ "toml 0.8.15",
  "tracing 0.1.41",
  "url",
  "vector-config-common",
@@ -11374,7 +11374,7 @@ dependencies = [
  "tokio-stream",
  "tokio-test",
  "tokio-util",
- "toml 0.8.14",
+ "toml 0.8.15",
  "tonic 0.11.0",
  "tracing 0.1.41",
  "tracing-core 0.1.33",
