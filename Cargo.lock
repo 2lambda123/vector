@@ -3463,7 +3463,7 @@ version = "0.1.0"
 dependencies = [
  "chrono",
  "fakedata_generator",
- "rand 0.8.5",
+ "rand 0.9.0",
 ]
 
 [[package]]
@@ -5228,7 +5228,7 @@ dependencies = [
  "indoc",
  "k8s-openapi 0.16.0",
  "k8s-test-framework",
- "rand 0.8.5",
+ "rand 0.9.0",
  "regex",
  "reqwest 0.12.5",
  "serde_json",
@@ -7102,7 +7102,7 @@ checksum = "3bccab0e7fd7cc19f820a1c8c91720af652d0c88dc9664dd72aef2614f04af3b"
 name = "portpicker"
 version = "1.0.0"
 dependencies = [
- "rand 0.8.5",
+ "rand 0.9.0",
 ]
 
 [[package]]
@@ -10968,7 +10968,7 @@ dependencies = [
  "prost-types 0.13.4",
  "pulsar",
  "quickcheck",
- "rand 0.8.5",
+ "rand 0.9.0",
  "rand_distr",
  "ratatui",
  "rdkafka",
@@ -11078,7 +11078,7 @@ dependencies = [
  "pin-project",
  "proptest",
  "quickcheck",
- "rand 0.8.5",
+ "rand 0.9.0",
  "rkyv",
  "serde",
  "serde_yaml 0.9.30",
@@ -11229,7 +11229,7 @@ dependencies = [
  "quanta",
  "quickcheck",
  "quickcheck_macros",
- "rand 0.8.5",
+ "rand 0.9.0",
  "rand_distr",
  "regex",
  "ryu",
@@ -11300,7 +11300,7 @@ dependencies = [
  "futures-util",
  "pin-project",
  "proptest",
- "rand 0.8.5",
+ "rand 0.9.0",
  "rand_distr",
  "tokio",
  "tokio-util",
