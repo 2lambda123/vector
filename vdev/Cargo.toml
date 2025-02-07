@@ -9,7 +9,7 @@ publish = false
 
 [dependencies]
 anyhow = "1.0.95"
-cached = "0.52.0"
+cached = "0.54.0"
 chrono = { version = "0.4.39", default-features = false, features = ["serde", "clock"] }
 clap = { version = "4.5.13", features = ["derive"] }
 clap-verbosity-flag = "3.0.2"
