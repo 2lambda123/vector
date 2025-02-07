@@ -355,7 +355,7 @@ proptest = "1.5"
 quickcheck = "1.0.3"
 reqwest = { version = "0.12", features = ["json"] }
 rstest = {version = "0.22.0"}
-tempfile = "3.10.1"
+tempfile = "3.16.0"
 test-generator = "0.3.1"
 tokio = { version = "1.38.0", features = ["test-util"] }
 tokio-test = "0.4.4"
