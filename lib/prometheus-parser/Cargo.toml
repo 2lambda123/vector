@@ -11,7 +11,7 @@ license = "MPL-2.0"
 [dependencies]
 indexmap = "2.1.0"
 nom = "8.0.0"
-num_enum = "0.7.2"
+num_enum = "0.7.3"
 prost = "0.13"
 prost-types = "0.13"
 snafu = { version = "0.8" }
